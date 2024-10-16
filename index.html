@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Приложение для заметок</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Мои заметки</h1>
+        <div id="notes-list">
+            <!-- Список заметок -->
+        </div>
+
+        <div id="note-editor" style="display: none;">
+            <h2>Редактор заметки</h2>
+            <input type="text" id="note-title" placeholder="Название заметки">
+            <textarea id="note-content" placeholder="Текст заметки"></textarea>
+            <input type="date" id="reminder-date" placeholder="Дата напоминания"> <br>
+            <div class="editor-buttons">
+                <button id="save-note-btn">Сохранить</button>
+                <button class="delete-btn">Удалить</button>
+            </div>
+        </div>
+
+        <button id="new-note-btn">Новая заметка</button>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "name": "prilichrnir",
+  "version": "1.0.0",
+  "description": "Приложение для заметок с напоминаниями",
+  "main": "main.js",
+  "bin": "main.js", 
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "author": "Artur",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8",
+    "node-notifier": "10.0.1",
+    "pkg": "^5.8.1",
+    "sqlite3": "^5.1.7"
+  },
+  "build": {
+    "appId": "com.yourcompany.notes",
+    "productName": "Приложение для заметок с напоминаниями",
+    "files": [
+      "main.js",
+      "renderer.js",
+      "index.html",
+      "styles.css"
+    ],
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    },
+    "icon": "path/to/your/icon.ico",
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "pkg": {
+    "targets": [
+      "node14-linux-x64",
+      "node14-macos-x64",
+      "node14-win-x64"
+    ]
+  }
+}
