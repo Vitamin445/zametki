@@ -11,6 +11,10 @@
   },
   "author": "Artur",
   "license": "MIT",
+  "dependencies": {
+    "node-notifier": "10.0.1",
+    "sqlite3": "^5.1.7"
+  },
   "devDependencies": {
     "electron": "^33.0.0",
     "electron-builder": "^25.1.8",
